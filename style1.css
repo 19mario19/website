@@ -1,0 +1,275 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+
+  box-sizing: border-box;
+
+
+
+  background-color: black;
+
+  
+  background-image: url("./background-sky-night-1.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  
+}
+
+.wrapper {
+  display: grid;
+  padding: 2em 2.5em;
+
+  background-color: black;
+
+  background-image: url("./background-sky-night-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  overflow: hidden;
+
+  color: white;
+
+  min-width: 300px;
+}
+
+.header {
+  /* background-color: lightseagreen; */
+
+  display: grid;
+  justify-content: center;
+  /* grid-template-columns: 1fr; */
+
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+
+  margin-bottom: 3.5em;
+  margin-left: 0.5em;
+
+}
+
+.header .top {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1em 0;
+}
+
+.header img {
+  /* background-color: lightblue; */
+
+
+  width: auto;
+  max-height: 4.5em;
+
+  transition: all 600ms ease-in-out 50ms;
+ 
+}
+
+.header img:hover {
+  transform: scale(1.3) rotate(360deg);
+  
+}
+
+.header h1 {
+  /* background-color:turquoise ; */
+  margin-left: 1em;
+
+  transition: all 600ms ease-in-out 50ms;
+}
+
+.header h1:hover {
+  transform: scale(1.05) ;
+  
+}
+
+.header h4 {
+  /* background-color: bisque; */
+
+}
+
+.header p, .footer .links a{
+  color: #f2f2f9;
+
+  line-height: 1.2;
+
+}
+
+.header #link{
+  color: #ea8102;
+  font-weight: bold;
+  
+ 
+}
+
+.container {
+  /* overflow: hidden; */
+  /* max-width: 1500px;
+  min-width: 300px; */
+  margin-bottom: 3em;
+
+  /* background-color: #ea8102; */
+  padding: 15px;
+
+ 
+  
+
+  
+}
+
+/* ALIGNING THE GRID IMAGES */
+
+.grid-images {
+  
+
+  padding: 2px;
+
+  justify-content: end;
+  align-items: stretch;
+
+  display: grid;
+  
+  gap: 2.2em 2em;
+  
+}
+
+/* First is for on line  */
+
+@media only screen and (max-width: 599px) {
+  .header .top { 
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  .header .top h1{ 
+  transform: translate(-10%, 0);
+  }
+}
+
+@media (min-width: 600px) {
+  .grid-images {
+    grid-template-columns: repeat(2,1fr);
+  
+  }
+
+  .wrapper {
+    padding: 5em;
+  }
+
+  
+  
+}
+
+@media (min-width: 700px) {
+  .grid-images {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .wrapper {
+    padding: 6em;
+  }
+
+}
+@media (min-width: 1000px) {
+  .grid-images {
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .wrapper {
+    padding: 7em;
+  }
+
+  .button {
+    font-size: 1.4em;
+  }
+
+}
+
+
+.grid-images img {
+ 
+
+  border-radius: 3px;
+  outline: 2px solid #f8f8ff;
+  border: 1px solid #392d26;
+
+  max-width: 100%;
+  height: auto;
+
+  transition: all 600ms ease-in-out 50ms;
+
+ 
+}
+
+.grid-images img:hover {
+  transform: scale(1.09) ;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+}
+
+.footer {
+  display: grid;
+  margin-left: 1.2em;
+  justify-content: start;
+}
+
+.footer .links {
+  margin-bottom: 2em;
+ 
+    
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  
+}
+
+.links a {
+  display: inline-block;
+  /* background-color: #ea8102; */
+  font-size: 1.1em;
+  transition: all 400ms ease-in-out 50ms;
+  
+}
+
+.links a:hover {
+  
+  transform: scale(1.1);
+  text-decoration: underline;
+  
+}
+
+
+
+.bottom-button {
+  display: grid;
+  /* background-color: cadetblue; */
+  justify-content: center;
+}
+
+.button {
+  border-radius: 2px;
+
+  color: #ea8102;
+  border: 1px solid #a3a3a7;
+
+  padding: 0.5em;
+
+  transition: all 600ms ease-in-out 50ms;
+
+}
+
+.button:hover {
+  transform: scale(1.2) translate(0, -12px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+
+  color: white;
+  border: 1px solid #ea8102;
+  background-color: #ea8102;
+}
